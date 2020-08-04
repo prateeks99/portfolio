@@ -13,11 +13,13 @@ export default function Home() {
         <link rel="icon" href="/icon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.title2}>
     
         <div className={styles.typewriter}><h1>Hey, I'm Prateek Saxena!👋</h1></div>
 
         <button className={styles.button}><a href="https://drive.google.com/file/d/1fBSRjBT1ryYq3IdyhSJ5IUll8T6cQ7d4/view?usp=sharing"><h1>DOWNLOAD RESUME</h1></a></button>
         
+        </div>
       </main>
 
       <footer className={styles.footer}>
