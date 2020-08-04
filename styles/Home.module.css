@@ -75,6 +75,7 @@
   position: fixed;
   left: 0%;
   bottom: 0%;
+  opacity:40%;
   
   justify-content: center;
   align-items: center;
