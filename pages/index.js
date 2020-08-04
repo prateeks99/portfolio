@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
     
-        <h1 className={styles.title2}>Hey, I'm Prateek Saxena!👋</h1>
+        <div className={styles.typewriter}><h1>Hey, I'm Prateek Saxena!👋</h1></div>
 
         <button className={styles.button}><a href="https://www.google.co.in/"><h1>DOWNLOAD RESUME</h1></a></button>
         
