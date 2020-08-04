@@ -19,15 +19,15 @@ export default function Home() {
       
       <div className={styles.grid}>
           <a className={styles.card2}>
-             <img className={styles.imageholder} src="https://i.ibb.co/9WR9GFq/941579f2-8d4e-445f-b058-2e3e5a140656.jpg" width="90%" height="90%" />  
-            
-            <h3>Kylo:Run</h3>
+             <img href="https://www.youtube.com/watch?v=BTXG2pbuT3Q&t=1s" className={styles.imageholder} src="https://i.ibb.co/9WR9GFq/941579f2-8d4e-445f-b058-2e3e5a140656.jpg" width="90%" height="90%" />  
+      
+            <div><a href="https://www.youtube.com/watch?v=BTXG2pbuT3Q&t=1s"><h3>Kylo:Run</h3></a></div>
             <p>An Open-Source game made using Unity5 2D Engine.</p>
             <button className={styles.button2}><a href="https://github.com/prateeks99/GameDev_Project1" ><h1>View Code</h1></a></button>
           </a>
 
           <a className={styles.card2}>
-            <img className={styles.imageholder} src="https://i.ibb.co/KskJz9p/Screenshot-60.png" width="90%" height="90%" />
+            <img href="https://postit-taupe.vercel.app/" className={styles.imageholder} src="https://i.ibb.co/KskJz9p/Screenshot-60.png" width="90%" height="90%" />
           <div class="image">
            
             
