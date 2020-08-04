@@ -227,9 +227,10 @@
   border: 5px solid #8080ff;
   border-radius: 50%;
   margin-left: 10%;
+  margin-bottom: 3%;
   margin-right: 10%;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 180px;
+  max-height: 180px;
  
 }
 .profilepicabout{
