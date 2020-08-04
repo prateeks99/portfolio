@@ -65,7 +65,7 @@
   opacity: 100%;
 }
 .navbar h1{
-  font-size: 1.7  rem;
+  font-size: 1.5rem;
   background-color: white;
   background-image: linear-gradient(45deg,   cyan  , #8080ff  );
   background-size: 100%;
@@ -137,10 +137,9 @@
 }
 
 .description {
-
-  margin-left: 20%;
-  margin-right: 20%;
-  
+  display: flex;
+  max-width: 40rem;
+  flex-wrap: wrap;
   text-align: justify;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -168,20 +167,18 @@
 
 
 .grid2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 20.5%;
-  margin-right:20.5%;
-  max-width: 1000px;
-  margin-top: 0.8rem;
+  max-width: 920px;
+  margin-top: 0.4rem;
 }
 
 
 .card {
-  margin: 1rem;
+  min-width: 450px;
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
@@ -224,27 +221,22 @@
   border-radius: 15px;
  
 }
-.outer_circle { 
-  position: fixed; 
-  margin: 100px; 
-  width: 500px; 
-  height: 500px; 
-  border-radius: 50%; 
-  background: white; 
-} 
+
 .profilepic{
   padding: 0.23rem;
   border: 5px solid #8080ff;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 200px;
+  max-height: 200px;
  
 }
 .profilepicabout{
   padding: 0rem;
   border: 5px solid #8080ff;
   border-radius: 50%;
-  margin-right: 30%;
-  margin-bottom: 0rem;
+  max-width: 90%;
  
 }
 .buttonholder{
@@ -280,14 +272,11 @@
   padding-bottom: 1.5rem;
 }
 
-.card2:hover,
-.card2:focus,
-.card2:active {
-  
-}
 .typewriter h1 {
   text-align: center;
-  font-size: 2.95rem;
+  font-size: 280%;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap; 
