@@ -17,7 +17,7 @@ export default function Home() {
     
         <div className={styles.typewriter}><h1>Hey, I'm Prateek Saxena!👋</h1></div>
 
-        <button className={styles.button}><a href="https://drive.google.com/file/d/1fBSRjBT1ryYq3IdyhSJ5IUll8T6cQ7d4/view?usp=sharing"><h1>DOWNLOAD RESUME</h1></a></button>
+        <button className={styles.button}><a href="https://drive.google.com/file/d/137UnmyOBw-iMib3hu03a6xkBgF6xWtLS/view?usp=sharing"><h1>RESUME</h1></a></button>
         
         </div>
       </main>
