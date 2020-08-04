@@ -402,12 +402,12 @@
 }
 @media screen and (max-width: 600px) {
   .typewriter h1 {
-    font-size: 100px;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 601px) {
   .typewriter h1{
-    font-size: 500px;
+    font-size: 80px;
   }
 }
