@@ -256,6 +256,28 @@
 .card2:active {
   
 }
+.typewriter h1 {
+  text-align: center;
+  font-size: 2.95rem;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  margin-top: 21%; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 
 .card2 h3 {
   margin: 0 0 1rem 0;
