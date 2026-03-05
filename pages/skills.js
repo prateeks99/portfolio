@@ -1,52 +1,57 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import cards, { Card } from 'semantic-ui-react'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
-import {SocialMediaIconsReact} from 'social-media-icons-react'
 
-export default function Home() {
+const skills = [
+  {
+    category: 'Languages',
+    items: ['Python', 'Perl', 'C++', 'SQL', 'Shell', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'],
+  },
+  {
+    category: 'Cloud & Infrastructure',
+    items: ['AWS', 'GCP', 'Azure', 'OCI', 'Docker', 'Unix', 'Linux Kernel'],
+  },
+  {
+    category: 'Frameworks & Tools',
+    items: ['React', 'Next.js', 'Express', 'Flask', 'Spring Boot', 'Tailwind CSS', 'Git', 'Ansible'],
+  },
+  {
+    category: 'Databases & Data',
+    items: ['Oracle DB', 'MongoDB', 'Redis', 'Firebase', 'Vector Search', 'ONNX'],
+  },
+  {
+    category: 'Domains',
+    items: ['AI/ML', 'RAG', 'NL2SQL', 'Cloud Computing', 'Networking', 'IoT', 'DevOps'],
+  },
+]
+
+export default function Skills() {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
-      <Head>
-        <title>Skills</title>
-        <link rel="icon" href="/icon.ico" />
-      </Head>
-      <h1 className={styles.title}>Skills</h1>
-      <div className={styles.cards}></div>
-      <div className={styles.grid2}>
-          <a className={styles.card}>
-            <h3>Data Structures &amp; Algorithms</h3>
-            <p>I have a good understanding of Data Structures and the design of various Algorithms.</p>
-          </a>
+      <div className={styles.page}>
+        <Head>
+          <title>Skills - Prateek Saxena</title>
+          <link rel="icon" href="/icon.ico" />
+        </Head>
 
-          <a className={styles.card}>
-            <h3>Game Development</h3>
-            <p>I have good knowledge of Unity2D, including experience with scripting (C#), animation and GUI styles.</p>
-          </a>
+        <h1 className={styles.sectionTitle}>Skills</h1>
 
-          <a
-            className={styles.card}
-          >
-            <h3>Web Development</h3>
-            <p>I have knowledge in different front end and back end Languages, responsive frameworks and databases.</p>
-          </a>
-          <a
-            className={styles.card}
-          >
-            <h3>Graphic Designing</h3>
-            <p>I have some experience in UI/UX Designing and Graphic Designing with Adobe Illustrator and Photoshop.</p>
-          </a>
+        {skills.map((s) => (
+          <div key={s.category} className={styles.skillSection}>
+            <h3 className={styles.skillCategory}>{s.category}</h3>
+            <div className={styles.skillTags}>
+              {s.items.map((item) => (
+                <span key={item} className={styles.skillTag}>{item}</span>
+              ))}
+            </div>
+          </div>
+        ))}
 
+        <div className={styles.footer}>
+          <p className={styles.footerText}>Prateek Saxena</p>
         </div>
-      <footer className={styles.footer}>
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="twitter" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://twitter.com/prateeks99" size="70" />
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://www.linkedin.com/in/prateeks99/" size="70" />
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="github" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://github.com/prateeks99" size="70" />
-      </footer>
-    </div>
+      </div>
     </div>
   )
 }

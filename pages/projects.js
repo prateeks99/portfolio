@@ -1,49 +1,95 @@
-import Head from 'next/head'  
-import React from 'react'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
-import {SocialMediaIconsReact} from 'social-media-icons-react';
-import {Button} from 'semantic-ui-react'
-export default function Home() {
-  
-  
+
+const projects = [
+  {
+    title: 'Select AI Python SDK',
+    org: 'Oracle',
+    desc: 'Open-source SDK enabling developers to build RAG, NL2SQL, agentic workflows, and vector search applications against Oracle Autonomous Database.',
+    tags: ['Python', 'AI/ML', 'RAG', 'NL2SQL', 'Vector Search'],
+  },
+  {
+    title: 'Cloud Sanity Checker',
+    org: 'Citrix',
+    desc: 'Tool to detect and prevent cloud deployment misconfigurations. Adopted as official deployment utility, reducing customer config errors by ~40%.',
+    tags: ['Python', 'AWS', 'Cloud', 'DevOps'],
+  },
+  {
+    title: 'HA Daemon',
+    org: 'Citrix',
+    desc: 'High Availability Daemon for Netscaler on AWS ensuring redundancy through seamless failover, reducing downtime by ~50%.',
+    tags: ['Python', 'AWS', 'Networking', 'HA'],
+  },
+  {
+    title: 'Zero Touch Provisioning',
+    org: 'Citrix',
+    desc: 'Preboot Userdata feature for NetScaler on Linux automating license setup and interface configuration, reducing setup time by ~90%.',
+    tags: ['Python', 'Linux', 'Automation'],
+  },
+  {
+    title: 'Real-time Chat Application',
+    org: 'NIT Warangal',
+    desc: 'Full-stack chat app using MERN stack, Socket.IO, and Redis. Secure auth with OAuth2, containerized with Docker, deployed on GCP Cloud Run.',
+    tags: ['TypeScript', 'Next.js', 'Socket.IO', 'Redis', 'Docker', 'GCP'],
+  },
+  {
+    title: 'LoRa Patient Monitoring System',
+    org: 'NIT Warangal',
+    desc: 'IoT-based real-time health monitoring using Arduino, NodeMCU, and LoRa modules with a custom Android app and Firebase cloud backend.',
+    tags: ['IoT', 'Arduino', 'Python', 'C++', 'Firebase'],
+  },
+  {
+    title: 'Kylo:Run',
+    org: 'Personal',
+    desc: 'An open-source 2D game built with Unity5 engine.',
+    tags: ['Unity', 'C#', 'Game Dev'],
+    link: 'https://github.com/prateeks99/GameDev_Project1',
+  },
+  {
+    title: 'Post-it!',
+    org: 'Personal',
+    desc: 'A community notes app built with MongoDB and Next.js.',
+    tags: ['Next.js', 'MongoDB', 'React'],
+    link: 'https://github.com/prateeks99/notesapp',
+  },
+]
+
+export default function Projects() {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
-      <Head>
-        <title>Projects</title>
-        <link rel="icon" href="/icon.ico" />
-      </Head>
-      <h1 className={styles.title}>Projects</h1>
-      
-      <div className={styles.grid}>
-          <a className={styles.card2}>
-             <img href="https://www.youtube.com/watch?v=BTXG2pbuT3Q&t=1s" className={styles.imageholder} src="https://i.ibb.co/9WR9GFq/941579f2-8d4e-445f-b058-2e3e5a140656.jpg" width="90%" height="90%" />  
-      
-            <div><a href="https://www.youtube.com/watch?v=BTXG2pbuT3Q&t=1s"><h3>Kylo:Run</h3></a></div>
-            <p>An Open-Source game made using Unity5 2D Engine.</p>
-            <button className={styles.button2}><a href="https://github.com/prateeks99/GameDev_Project1" ><h1>View Code</h1></a></button>
-          </a>
+      <div className={styles.page}>
+        <Head>
+          <title>Projects - Prateek Saxena</title>
+          <link rel="icon" href="/icon.ico" />
+        </Head>
 
-          <a className={styles.card2}>
-            <img href="https://postit-taupe.vercel.app/" className={styles.imageholder} src="https://i.ibb.co/KskJz9p/Screenshot-60.png" width="90%" height="90%" />
-          <div class="image">
-           
-            
-          </div>
-            <a href="https://postit-taupe.vercel.app/"><h3>Post-it!</h3></a>
-            <p>A community Notes App using MongoDB + Next.js.</p>
-            <div className={styles.buttonholder}><button className={styles.button2}><a href="https://github.com/prateeks99/notesapp" ><h1>View Code</h1></a></button></div>
-          </a>
+        <h1 className={styles.sectionTitle}>Projects</h1>
+
+        <div className={styles.projectGrid}>
+          {projects.map((p) => (
+            <div key={p.title} className={styles.projectCard}>
+              <div className={styles.projectCardHeader}>
+                <h3 className={styles.projectCardTitle}>
+                  {p.link ? <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} &rarr;</a> : p.title}
+                </h3>
+                <span className={styles.projectCardOrg}>{p.org}</span>
+              </div>
+              <p className={styles.projectCardDesc}>{p.desc}</p>
+              <div className={styles.projectCardTags}>
+                {p.tags.map((t) => (
+                  <span key={t} className={styles.tag}>{t}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      
-      <footer className={styles.footer}>
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="twitter" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://twitter.com/prateeks99" size="70" />
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://www.linkedin.com/in/prateeks99/" size="70" />
-      <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="solid" icon="github" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(0,0,0,1)" iconSize="0" roundness="15%" url="https://github.com/prateeks99" size="70" />
-      </footer>
-    </div>
+
+        <div className={styles.footer}>
+          <p className={styles.footerText}>Prateek Saxena</p>
+        </div>
+      </div>
     </div>
   )
 }
