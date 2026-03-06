@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 const Navbar = () => (
   <nav className={styles.nav}>
     <div className={styles.navInner}>
-      <a href="/portfolio" className={styles.logo}>prateeks99</a>
+      <a href="/portfolio" className={styles.logo}>PS</a>
       <div className={styles.navLinks}>
         <a href="/portfolio/about">About</a>
         <a href="/portfolio/experience">Experience</a>
