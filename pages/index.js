@@ -39,7 +39,6 @@ export default function Home() {
           <SocialIcons links={[
             { icon: 'github', url: 'https://github.com/prateeks99' },
             { icon: 'linkedin', url: 'https://www.linkedin.com/in/prateeks99/' },
-            { icon: 'twitter', url: 'https://twitter.com/prateeks99' },
             { icon: 'email', url: 'mailto:prateeksaxena1999@gmail.com' },
           ]} />
         </div>
