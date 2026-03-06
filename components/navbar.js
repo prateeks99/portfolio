@@ -3,12 +3,12 @@ import styles from '../styles/Home.module.css';
 const Navbar = () => (
   <nav className={styles.nav}>
     <div className={styles.navInner}>
-      <a href="./" className={styles.logo}>prateeks99</a>
+      <a href="/portfolio" className={styles.logo}>prateeks99</a>
       <div className={styles.navLinks}>
-        <a href="./about">About</a>
-        <a href="./experience">Experience</a>
-        <a href="./projects">Projects</a>
-        <a href="./skills">Skills</a>
+        <a href="/portfolio/about">About</a>
+        <a href="/portfolio/experience">Experience</a>
+        <a href="/portfolio/projects">Projects</a>
+        <a href="/portfolio/skills">Skills</a>
       </div>
     </div>
   </nav>
