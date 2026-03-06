@@ -8,14 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "file-loader": "^6.0.0",
-    "image-webpack-loader": "^6.0.0",
-    "next": "9.5.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^1.1.1",
-    "styled-components": "^5.1.1",
-    "use-dark-mode": "^2.3.1"
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }
