@@ -14,14 +14,11 @@ export default function Home() {
         </Head>
 
         <div className={styles.hero}>
-          <p className={styles.greeting}>&gt; Hi, I'm</p>
-          <h1 className={styles.name}>
-            <span className={styles.typingText}>Prateek Saxena</span>
-          </h1>
-          <p className={styles.role}>// Member of Technical Staff at Oracle</p>
+          <h1 className={styles.name}>Prateek Saxena</h1>
           <p className={styles.bio}>
-            Software engineer with experience in cloud infrastructure, AI/ML tooling, and distributed systems.
-            Previously at Citrix. B.Tech in ECE from NIT Warangal.
+            Member of Technical Staff at Oracle, where I build AI/ML developer tooling
+            and cloud database infrastructure. Previously at Citrix on high-availability
+            NetScaler systems.
           </p>
 
           <a
