@@ -8,7 +8,7 @@ const projects = [
     org: 'Oracle',
     desc: 'Production open-source SDK that puts RAG, NL2SQL, agentic workflows, and vector search on Oracle Autonomous Database — shipped publicly, real developer users.',
     tags: ['Python', 'AI/ML', 'RAG', 'NL2SQL', 'Vector Search'],
-    link: 'https://github.com/oracle/select-ai-python-sdk',
+    link: 'https://github.com/prateeks99/python-select-ai',
   },
   {
     title: 'HA Daemon',
@@ -47,7 +47,7 @@ const projects = [
     org: 'Personal',
     desc: 'Log and categorize personal spending with a full-stack app — React frontend, Spring Boot backend, built to understand where money actually goes.',
     tags: ['React', 'Spring Boot', 'Java', 'Full Stack'],
-    link: 'https://github.com/prateeks99/exptrack',
+    link: 'https://github.com/prateeks99/expense_tracker',
   },
 ]
 
