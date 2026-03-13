@@ -6,52 +6,69 @@ const projects = [
   {
     title: 'Select AI Python SDK',
     org: 'Oracle',
-    desc: 'Open-source SDK enabling developers to build RAG, NL2SQL, agentic workflows, and vector search applications against Oracle Autonomous Database.',
+    desc: 'Production open-source SDK that puts RAG, NL2SQL, agentic workflows, and vector search on Oracle Autonomous Database — shipped publicly, real developer users.',
     tags: ['Python', 'AI/ML', 'RAG', 'NL2SQL', 'Vector Search'],
-  },
-  {
-    title: 'Cloud Sanity Checker',
-    org: 'Citrix',
-    desc: 'Tool to detect and prevent cloud deployment misconfigurations. Adopted as official deployment utility, reducing customer config errors by ~40%.',
-    tags: ['Python', 'AWS', 'Cloud', 'DevOps'],
+    link: 'https://github.com/oracle/select-ai-python-sdk',
   },
   {
     title: 'HA Daemon',
     org: 'Citrix',
-    desc: 'High Availability Daemon for Netscaler on AWS ensuring redundancy through seamless failover, reducing downtime by ~50%.',
+    desc: 'Keeps NetScaler on AWS running when instances fail — seamless failover via EIP/PIP migration, cutting downtime by ~50% over the legacy ENI approach.',
     tags: ['Python', 'AWS', 'Networking', 'HA'],
   },
   {
     title: 'Zero Touch Provisioning',
     org: 'Citrix',
-    desc: 'Preboot Userdata feature for NetScaler on Linux automating license setup and interface configuration, reducing setup time by ~90%.',
+    desc: 'Eliminated manual NetScaler setup entirely — automated license activation, interface config, and startup scripts; ~90% reduction in provisioning time.',
     tags: ['Python', 'Linux', 'Automation'],
   },
   {
-    title: 'Real-time Chat Application',
-    org: 'NIT Warangal',
-    desc: 'Full-stack chat app using MERN stack, Socket.IO, and Redis. Secure auth with OAuth2, containerized with Docker, deployed on GCP Cloud Run.',
-    tags: ['TypeScript', 'Next.js', 'Socket.IO', 'Redis', 'Docker', 'GCP'],
+    title: 'Cloud Sanity Checker',
+    org: 'Citrix',
+    desc: 'Catches cloud deployment misconfigurations before they reach production — adopted org-wide by ~500 engineers, reducing config errors by ~40%.',
+    tags: ['Python', 'AWS', 'Cloud', 'DevOps'],
   },
   {
-    title: 'LoRa Patient Monitoring System',
-    org: 'NIT Warangal',
-    desc: 'IoT-based real-time health monitoring using Arduino, NodeMCU, and LoRa modules with a custom Android app and Firebase cloud backend.',
-    tags: ['IoT', 'Arduino', 'Python', 'C++', 'Firebase'],
+    title: 'gmail-cleanup',
+    org: 'Personal',
+    desc: 'Automates inbox hygiene — OAuth-authenticated Gmail API, handles unsubscribe flows and bulk deletion by rules. Keeps the inbox signal-to-noise ratio high.',
+    tags: ['Python', 'Gmail API', 'OAuth'],
+    link: 'https://github.com/prateeks99/gmail-cleanup',
   },
+  {
+    title: 'tasks (TUI)',
+    org: 'Personal',
+    desc: 'Local to-do CLI built for developers who live in the terminal — keyboard-driven, zero context-switch to a browser.',
+    tags: ['Python', 'CLI', 'TUI'],
+    link: 'https://github.com/prateeks99/tasks',
+  },
+  {
+    title: 'exptrack',
+    org: 'Personal',
+    desc: 'Log and categorize personal spending with a full-stack app — React frontend, Spring Boot backend, built to understand where money actually goes.',
+    tags: ['React', 'Spring Boot', 'Java', 'Full Stack'],
+    link: 'https://github.com/prateeks99/exptrack',
+  },
+]
+
+const olderProjects = [
   {
     title: 'Kylo:Run',
-    org: 'Personal',
-    desc: 'An open-source 2D game built with Unity5 engine.',
-    tags: ['Unity', 'C#', 'Game Dev'],
+    desc: 'Open-source 2D game.',
     link: 'https://github.com/prateeks99/GameDev_Project1',
   },
   {
     title: 'Post-it!',
-    org: 'Personal',
-    desc: 'A community notes app built with MongoDB and Next.js.',
-    tags: ['Next.js', 'MongoDB', 'React'],
+    desc: 'Community notes app.',
     link: 'https://github.com/prateeks99/notesapp',
+  },
+  {
+    title: 'Real-time Chat Application',
+    desc: 'MERN + Socket.IO chat app with OAuth2, Docker, GCP — NIT Warangal project.',
+  },
+  {
+    title: 'LoRa Patient Monitoring System',
+    desc: 'IoT health monitoring with Arduino, LoRa, Firebase — NIT Warangal project.',
   },
 ]
 
@@ -72,7 +89,9 @@ export default function Projects() {
             <div key={p.title} className={styles.projectCard}>
               <div className={styles.projectCardHeader}>
                 <h3 className={styles.projectCardTitle}>
-                  {p.link ? <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} &rarr;</a> : p.title}
+                  {p.link
+                    ? <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} &rarr;</a>
+                    : p.title}
                 </h3>
                 <span className={styles.projectCardOrg}>{p.org}</span>
               </div>
@@ -82,6 +101,18 @@ export default function Projects() {
                   <span key={t} className={styles.tag}>{t}</span>
                 ))}
               </div>
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.olderProjectsSection}>
+          <p className={styles.olderProjectsTitle}>Also on GitHub</p>
+          {olderProjects.map((p) => (
+            <div key={p.title} className={styles.olderProjectLink}>
+              {p.link
+                ? <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} &rarr;</a>
+                : <span>{p.title}</span>}
+              <span>{p.desc}</span>
             </div>
           ))}
         </div>
