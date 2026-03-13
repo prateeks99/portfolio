@@ -8,7 +8,7 @@ const projects = [
     org: 'Oracle',
     desc: 'Production open-source SDK that puts RAG, NL2SQL, agentic workflows, and vector search on Oracle Autonomous Database — shipped publicly, real developer users.',
     tags: ['Python', 'AI/ML', 'RAG', 'NL2SQL', 'Vector Search'],
-    link: 'https://github.com/prateeks99/python-select-ai',
+    link: 'https://github.com/oracle/python-select-ai',
   },
   {
     title: 'HA Daemon',
@@ -29,11 +29,11 @@ const projects = [
     tags: ['Python', 'AWS', 'Cloud', 'DevOps'],
   },
   {
-    title: 'gmail-cleanup',
+    title: 'DunderChat',
     org: 'Personal',
-    desc: 'Automates inbox hygiene — OAuth-authenticated Gmail API, handles unsubscribe flows and bulk deletion by rules. Keeps the inbox signal-to-noise ratio high.',
-    tags: ['Python', 'Gmail API', 'OAuth'],
-    link: 'https://github.com/prateeks99/gmail-cleanup',
+    desc: 'Real-time group chat — instant messaging with multi-user rooms, Socket.IO event streaming, and persistent message history.',
+    tags: ['Next.js', 'Express', 'Socket.IO', 'MongoDB'],
+    link: 'https://github.com/prateeks99/dunderchat',
   },
   {
     title: 'tasks (TUI)',
