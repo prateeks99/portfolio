@@ -302,6 +302,13 @@
   background: #404040;
 }
 
+.impactHeadline {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-bottom: 6px;
+}
+
 /* ── Project Cards ── */
 .projectGrid {
   display: flex;
