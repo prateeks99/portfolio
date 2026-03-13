@@ -17,26 +17,15 @@ export default function About() {
 
         <div className={styles.aboutSection}>
           <p className={styles.aboutText}>
-            I studied Electronics and Communication Engineering at NIT Warangal, where I spent more time
-            reading about operating systems and distributed systems than anything on the syllabus. That
-            curiosity carried me to Citrix, where I spent two years building the kind of software that
-            quietly keeps other software alive — high-availability daemons that cut failover downtime by
-            half, a zero-touch provisioning system that collapsed multi-hour setup flows to minutes, and
-            a cloud deployment tool that let teams push NetScaler instances without touching a terminal.
-            These weren't features on a roadmap; they were infrastructure that real customers depended on
-            to stay operational.
+            Software engineer at Oracle, working on Select AI — integrating LLMs, vector search, and RAG
+            pipelines into Oracle's Autonomous Database. Previously at Citrix, building cloud automation
+            tools for NetScaler that reduced customer issues by 50%.
           </p>
         </div>
 
         <div className={styles.aboutSection}>
           <p className={styles.aboutText}>
-            At Oracle now, I work on Select AI — an open-source Python SDK that lets developers talk to
-            their databases in plain language. It's the first time my code ships to people I've never met,
-            and that changes how you think about every decision. There's something satisfying about watching
-            a public GitHub issue get filed by someone who built something real with what you built. I'm
-            also working toward an MS in Computer Science — not as a pivot, but as a way to go deeper on
-            the ML and systems problems I've been bumping into at work. The trajectory from HA infrastructure
-            to open-source AI tooling wasn't planned, but it makes sense to me now.
+            Currently pursuing an MS in Computer Science, with interests in ML, NLP, and distributed systems.
           </p>
         </div>
 

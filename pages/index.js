@@ -27,7 +27,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.resumeLink}
           >
-            resume.pdf &rarr;
+            resume.pdf
           </a>
 
           <SocialIcons links={[
