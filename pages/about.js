@@ -17,18 +17,26 @@ export default function About() {
 
         <div className={styles.aboutSection}>
           <p className={styles.aboutText}>
-            I'm a software engineer currently working as a Member of Technical Staff at Oracle, Bangalore,
-            where I build AI/ML developer tooling and cloud database infrastructure. Before Oracle, I spent
-            two years at Citrix building high-availability systems, zero-touch provisioning, and cloud
-            deployment tools for NetScaler.
+            I studied Electronics and Communication Engineering at NIT Warangal, where I spent more time
+            reading about operating systems and distributed systems than anything on the syllabus. That
+            curiosity carried me to Citrix, where I spent two years building the kind of software that
+            quietly keeps other software alive — high-availability daemons that cut failover downtime by
+            half, a zero-touch provisioning system that collapsed multi-hour setup flows to minutes, and
+            a cloud deployment tool that let teams push NetScaler instances without touching a terminal.
+            These weren't features on a roadmap; they were infrastructure that real customers depended on
+            to stay operational.
           </p>
         </div>
 
         <div className={styles.aboutSection}>
           <p className={styles.aboutText}>
-            I'm interested in AI, ML, and cloud computing, and I'm looking to advance my expertise
-            through an MS in Computer Science with the goal of developing intelligent systems and
-            contributing as an ML/Research Engineer.
+            At Oracle now, I work on Select AI — an open-source Python SDK that lets developers talk to
+            their databases in plain language. It's the first time my code ships to people I've never met,
+            and that changes how you think about every decision. There's something satisfying about watching
+            a public GitHub issue get filed by someone who built something real with what you built. I'm
+            also working toward an MS in Computer Science — not as a pivot, but as a way to go deeper on
+            the ML and systems problems I've been bumping into at work. The trajectory from HA infrastructure
+            to open-source AI tooling wasn't planned, but it makes sense to me now.
           </p>
         </div>
 
@@ -51,17 +59,6 @@ export default function About() {
               <span className={styles.detailLabel}>Email</span>
               <span className={styles.detailValue}>prateeksaxena1999@gmail.com</span>
             </div>
-          </div>
-        </div>
-
-        <div className={styles.aboutSection}>
-          <p className={styles.aboutLabel}>Leadership</p>
-          <div className={styles.aboutText}>
-            <p>Core Member, SpringSpree '22 — Design committee for NIT Warangal's annual cultural fest.</p>
-            <br />
-            <p>Additional Secretary, Quiz Club — Organised inter-college and intra-college quizzes.</p>
-            <br />
-            <p>Joint Secretary, ECE Association — Organised hackathons, workshops, and mentored juniors.</p>
           </div>
         </div>
 
