@@ -22,6 +22,7 @@ export default function Experience() {
 
             <div className={styles.projectBlock}>
               <p className={styles.projectName}>Select AI</p>
+              <p className={styles.impactHeadline}>Production open-source SDK for Oracle Autonomous Database — RAG, NL2SQL, agentic workflows, vector search</p>
               <ul className={styles.bulletList}>
                 <li>Designed and shipped an open-source Python SDK for Oracle Select AI enabling RAG, NL2SQL, agentic workflows, and vector search against Autonomous Database.</li>
                 <li>Enhanced NL2SQL functionality and ran cross-provider LLM benchmarking and accuracy tests to tune prompts.</li>
@@ -31,6 +32,7 @@ export default function Experience() {
 
             <div className={styles.projectBlock}>
               <p className={styles.projectName}>DBMS_CLOUD</p>
+              <p className={styles.impactHeadline}>Multi-cloud SQL migration and cloud function invocation shipped into Autonomous Database</p>
               <ul className={styles.bulletList}>
                 <li>Developed an SQL migration package to transform PostgreSQL, MySQL, and MSSQL into Oracle SQL.</li>
                 <li>Integrated cloud function invocation (AWS Lambda, Azure & GCP functions) into Autonomous Database workflows.</li>
@@ -45,6 +47,7 @@ export default function Experience() {
 
             <div className={styles.projectBlock}>
               <p className={styles.projectName}>HA Daemon</p>
+              <p className={styles.impactHeadline}>~50% failover downtime reduction — seamless failover for NetScaler on AWS</p>
               <ul className={styles.bulletList}>
                 <li>Built a Python-based High Availability Daemon for Netscaler on AWS with seamless failover.</li>
                 <li>Replaced legacy ENI transfer with EIP and PIP migration, reducing failover downtime by ~50%.</li>
@@ -53,6 +56,7 @@ export default function Experience() {
 
             <div className={styles.projectBlock}>
               <p className={styles.projectName}>Zero Touch Provisioning</p>
+              <p className={styles.impactHeadline}>~90% setup time reduction — automated license, interfaces, and startup configuration</p>
               <ul className={styles.bulletList}>
                 <li>Created Preboot Userdata feature for NetScaler on Linux, automating license setup, startup scripts, and interface configuration.</li>
                 <li>Reduced setup time by ~90% and eliminated operational costs for customers and internal testing.</li>
@@ -61,6 +65,7 @@ export default function Experience() {
 
             <div className={styles.projectBlock}>
               <p className={styles.projectName}>Cloud Sanity Checker</p>
+              <p className={styles.impactHeadline}>Adopted by ~500-person org; ~40% config error reduction across cloud deployments</p>
               <ul className={styles.bulletList}>
                 <li>Independently built a tool to detect and prevent cloud deployment misconfigurations.</li>
                 <li>Presented to ~500 stakeholders; adopted as official deployment utility, reducing config errors by ~40%.</li>
