@@ -411,6 +411,46 @@
   color: #404040;
 }
 
+/* ── Older Projects (Also on GitHub) ── */
+.olderProjectsSection {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.olderProjectsTitle {
+  font-size: 0.8rem;
+  color: #525252;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+}
+
+.olderProjectLink {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.olderProjectLink a {
+  color: #737373;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.olderProjectLink a:hover {
+  color: #e5e5e5;
+}
+
+.olderProjectLink span {
+  color: #404040;
+  font-size: 0.82rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .page {
